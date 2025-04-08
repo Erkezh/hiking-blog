@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('./assets/font/Gilroy-Regular.eot');
+    src: url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/font/Gilroy-Regular.woff') format('woff'),
+    url('./assets/font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('./assets/font/Gilroy-SemiBold.eot');
+    src: url('./assets/font/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/font/Gilroy-SemiBold.woff') format('woff'),
+    url('./assets/font/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('./assets/font/Gilroy-Bold.eot');
+    src: url('./assets/font/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/font/Gilroy-Bold.woff') format('woff'),
+    url('./assets/font/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.cormorant-garamond{
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}  
+body{
+    background-color: #0B1D26;
+}
+.logo{
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+}
+h1{
+    font-family: "Cormorant Garamond", serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    z-index: 6;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+header a{
+    font-family: 'Gilroy Semibold';
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.acc{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero{
+    background-image: url(./assets/HG.png);
+    filter: brightness(0.7);
+    top: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+.hero img{
+    height: 100vh;
+    width: 100%;
+}
+.title{
+    width: 60%;
+    position: fixed;
+    color: white;
+    z-index: 4;
+    top: 30%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.line{
+    height: 2px;
+    width: 80px;
+    background-color: #FBD784;
+}
+.guide{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.guide p{
+    color: #FBD784;
+    font-family: 'Gilroy Semibold';
+}
+.title  h1{
+    font-size: 80px;
+}
+.title a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gilroy Semibold';
+}
+.green{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 70%;
+}
+.articles{
+    position: relative;
+    margin-top: 30%;
+    z-index: 5;
+    width: 100%;
+    background-color: #0B1D26;
+    box-shadow: 0 -100px 100px 100px #0B1D26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.first{
+    padding: 10%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.top-line{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 5;
+}
+
+.text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.text h1{
+    font-size: 60px;
+}
+.text p{
+    font-size: 20px;
+    font-family: 'Gilroy Regular';
+}
+.text a, .top-line p{
+    color: #FBD784;
+    text-decoration: none;
+    font-family: 'Gilroy Semibold';
+}
+.number{
+    font-family: 'Gilroy Bold';
+    position: absolute;
+    z-index: 4;
+    font-size: 150px;
+    opacity: 0.3;
+    top: -80px;
+    left: -80px;
+}
+footer{
+    background-color: #0B1D26;
+    padding: 10%;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    gap: 30%;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-left h3{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Gilroy Semibold';
+}
+.footer-left p{
+    color: gray;
+    font-family: 'Gilroy Regular';
+}
+.footer-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.col h2{
+    color: #FBD784;
+    font-family: 'Gilroy Bold';
+}
+.col a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gilroy Regular';
+}
+a{
+    transition: all 0.8s ease;
+}
+a:hover{
+    color: #FBD784;
+}
+.acc img{
+    filter: brightness(0) invert(1);
+    transition: filter 0.8s ease;
+}
+.acc img:hover{
+    filter: brightness(1);
+}
+.text a:hover{
+    transform: translateX(10px);
+}
+.links a:hover{
+    transform: translateY(-5px);
+}
+.second img{
+    order: 2;
+}
+.first img{
+    width: 50%;
+}
+@media only screen and (max-width: 1024px){
+    .top-line p{
+        font-size: 14px;
+    }
+    .title{
+        top: 20%;
+    }
+    footer{
+        gap: 50px;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .title h1{
+        font-size: 70px;
+    }
+    .title{
+        width: 60%;
+        left: 20%;
+    }
+    .links{
+        display: none;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .text{
+        order: 2;
+    }
+    .first img{
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .second img{
+        object-position: bottom;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-right{
+        width: 100%;
+    }
+    .footer-left{
+        order: 1;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    header{
+        width: 90%;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .guide p{
+        font-size: 15px;
+    }
+    .line{
+        width: 40px;
+    }
+    .articles{
+        margin-top: 10%;
+    }
+    .first img{
+        height: 300px;
+    }
+    .text h1{
+        font-size: 40px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    footer{
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width:320px ){
+    .title h1{
+        font-size: 30px;
+    }
+    .title p{
+        font-size: 10px;
+    }
+    .col{
+        font-size: 10px;
+    }
+    .footer-left{
+        font-size: 10px;
+    }
+}
